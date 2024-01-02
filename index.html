@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda Digital</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Minha Agenda Digital</h1>
+        <div class="agenda">
+            <div class="event-form">
+                <h2>Novo Evento</h2>
+                <form id="eventForm">
+                    <label for="eventName">Nome do Evento:</label>
+                    <input type="text" id="eventName" required>
+
+                    <label for="eventDate">Data do Evento:</label>
+                    <input type="date" id="eventDate" required>
+
+                    <button type="button" onclick="addEvent()">Adicionar Evento</button>
+                </form>
+            </div>
+            <div class="event-list">
+                <h2>Eventos Agendados</h2>
+                <ul id="eventList"></ul>
+                <button onclick="clearEvents()">Limpar Agenda</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
