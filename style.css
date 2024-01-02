@@ -52,3 +52,13 @@ li {
 h1, h2 {
     color: #ffffff;
 }
+/* Adiciona estilo para telas menores que 600px (móveis) */
+@media screen and (max-width: 600px) {
+    .event-form {
+        width: 100%;
+    }
+
+    button {
+        width: auto;
+    }
+}
